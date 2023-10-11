@@ -9,15 +9,16 @@ public class LidoforeanCoat2
     {
         string coat = Console.ReadLine();
         int count = 0;
-        while (!coat)
+        while (coat != "Лидофореанское пальто")
         {
             if (coat == "Лидофореанское пальто")
             {
                 break;
-                Console.WriteLine(count);
             }
+            Console.WriteLine(coat);
             count++;
             coat = Console.ReadLine();
-        }    
+        } 
+        Console.WriteLine(count);    
     }
 }
